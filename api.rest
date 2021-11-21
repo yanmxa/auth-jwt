@@ -1,0 +1,34 @@
+
+
+POST http://localhost:3000/app/user/register
+Content-Type: application/json
+
+{
+  "name": "Dev Ed",
+  "email": "dev@163.com",
+  "password": "123456"
+}
+ 
+
+###
+
+POST http://localhost:3000/app/user/login
+Content-Type: application/json
+
+{
+  "email": "dev@163.com",
+  "password": "123456"
+}
+
+
+###
+
+GET http://localhost:3000/app/posts
+Content-Type: application/json
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTlhNGZmN2Y4ZmMzMGRlYjI2Mzg2MWIiLCJpYXQiOjE2Mzc1MDU0OTZ9.jkuMRnENAgcrHK1hzhkngEKQRZq5VDsStgGKDpU6QwA
+
+###
+
+GET http://localhost:3000/app/posts
+Content-Type: application/json
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTlhNGYzZDBjOGZkMGE1ZDMzOGNjMzYiLCJpYXQiOjE2Mzc1MDU0OTZ9.ToilzDvLUh6Qd1FUqzQRpSZHenmcmUgmAJcAI_w8rZc
