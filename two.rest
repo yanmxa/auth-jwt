@@ -1,0 +1,37 @@
+
+GET http://localhost:3000/posts
+Content-Type: application/json
+
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+  "username": "Jerry"
+}
+
+###
+
+DELETE  http://localhost:4000/logout
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmVycnkiLCJpYXQiOjE2MzkwNjg2NDZ9.Gx4oTi7gVfzdnkQTnWiw2YwDWcejJvmnzuRh_21WCro"
+}
+
+
+### 
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmVycnkiLCJpYXQiOjE2MzkwNjg2NDZ9.Gx4oTi7gVfzdnkQTnWiw2YwDWcejJvmnzuRh_21WCro"
+}
+
+### different server share with the same token and the authorication still works
+
+GET http://localhost:3000/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmVycnkiLCJpYXQiOjE2MzkwNjg2ODEsImV4cCI6MTYzOTA2ODc0MX0.ZPR0rqFZNOU41MI1fORMsmpALEJ9cFgbwiL933vJfnk

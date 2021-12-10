@@ -14,9 +14,6 @@ dotenv.config()
 const url = process.env.DB_CONNECT
 mongoose.connect(url, {useNewUrlParser: true},
   () => console.log(`connected to db: ${url}`))
-  // const db = mongoose.connection
-  // db.on('error', console.error.bind(console.log, "connection err:"))
-  // db.once('open', () => console.log("Connected successfully"))
 
 // Middleware
 app.use(express.json())

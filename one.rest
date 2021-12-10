@@ -1,14 +1,13 @@
 
-
 POST http://localhost:3000/app/user/register
 Content-Type: application/json
 
 {
   "name": "Dev Ed",
-  "email": "dev@163.com",
+  "email": "dev1@163.com",
   "password": "123456"
 }
- 
+
 
 ###
 
@@ -16,7 +15,7 @@ POST http://localhost:3000/app/user/login
 Content-Type: application/json
 
 {
-  "email": "dev@163.com",
+  "email": "dev1@163.com",
   "password": "123456"
 }
 
@@ -25,7 +24,7 @@ Content-Type: application/json
 
 GET http://localhost:3000/app/posts
 Content-Type: application/json
-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTlhNGZmN2Y4ZmMzMGRlYjI2Mzg2MWIiLCJpYXQiOjE2Mzc1MDU0OTZ9.jkuMRnENAgcrHK1hzhkngEKQRZq5VDsStgGKDpU6QwA
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWIyMjA4ZDY5YzU0OTFhYjRmNzMzZTAiLCJpYXQiOjE2MzkwNjM3NzJ9.io7a_si45k_OMllsdMLqCETXT_TTSR__gY3wvsNcTGU
 
 ###
 
